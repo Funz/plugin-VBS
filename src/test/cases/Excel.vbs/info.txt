@@ -1,0 +1,11 @@
+#Wed Sep 26 16:09:05 CEST 2018
+state=running
+start=16\:09\:02
+code=VBS
+info=Results parsed\: {1\=1.0}
+output={}
+input.No\ name=No value
+duration=0
+end=
+calc=btses106.proton.intra.irsn.fr\:53119
+output.z=125

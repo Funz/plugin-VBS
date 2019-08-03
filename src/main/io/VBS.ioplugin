@@ -1,0 +1,13 @@
+variableStartSymbol=$
+variableLimit=(...)
+formulaStartSymbol=@
+formulaLimit={...}
+commentLineChar='
+
+datasetFilter=contains("(.*)","WriteLine")
+
+outputlist=`grep("(.*)vbs","WScript\\.StdOut\\.WriteLine\\(\\"(.*)=")>>before("=")>>after(""")`
+
+output.???.get=lines("out.txt") >> filter("^???=(.*)") >> after("=")
+
+

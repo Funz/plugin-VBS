@@ -31,14 +31,14 @@ script:
 
 before_deploy:
   - ant clean dist
-  - cd dist; zip -r ../plugin-MyPlugin.zip *; cd ..
+  - cd dist; zip -r ../plugin-VBS.zip *; cd ..
   - ant install
-  - zip -r Funz-MyPlugin.zip Funz-MyPlugin
+  - zip -r Funz-VBS.zip Funz-VBS
   
 deploy:
   provider: releases
   api_key:
-    secure: __PUT_YOUR_GITHUB_ACCESS_KEY_HERE__:_'travis_setup_releases_--force'_will_generate_a_correct_.travis.yml
+    secure: BFFNhaGma0nIfgaWy8Jym22idBJCyQVkhyYyCCc1HAqS7aYWwBq4zaMn855m1yG8djeA8BSxemBi3mkEjrHEncpWDFUvVG31ndi9QxiCvMxcMPUb7B3tNVkB28rYV3U1K99cECwM/j8YnIICn3ijz0SrIJ3O56TZjbtLpXYGbmKjhLHSmoKl998g6fPeKe9gAWKYYcG2HfsY6KTvmG46WlvAj00TkkueMjNAL78J+0pP0SNkWUHLAwJcs9I3F/SoauZivYdzTyd9C8fE4EyTHLhZIjevbP/BtyftKnfpwg5GPajqqY+ETabvDxCz3GLSOIcXCRjZFsiqfVNr1NYrUTM994SAK2j5pt973DadWA06tU0ZLLqlaZTYS4+X8kU54XaTRk68Sr8HTREI62y4fRVNNdYQRLaYgybB5eZ4yQCblKAA76zZTxmL0b6GlNB6u79XmRDCJ0G/hEsaKDfjgtaxmNXp7jITTfviUS/xV48OOGhdRCJqzV377Mu5kb99TSI6vDGcNbFTe+6scUo0jmDsafDpbUyHhI2TlOGBeNvmO07GVwKG2J0WP51VGk1IU3jsyzK5wiNyeUBk8KgyWQcnBXNxyhgse9/rdnsCjWaYN9Rd4Tz6v9biG++FJ1NsJr5kcdf+UYi+uewM2wBgxeu1K2dnMzMuFRntTbszPig=
   file_glob: true
   file:
     - Funz-*.zip
