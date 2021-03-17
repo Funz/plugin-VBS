@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Funz/plugin-VBS.png)](https://travis-ci.org/Funz/plugin-VBS)
+[![.github/workflows/ant.yml](https://github.com/Funz/plugin-VBS/actions/workflows/ant.yml/badge.svg)](https://github.com/Funz/plugin-VBS/actions/workflows/ant.yml)
 
 # Funz plugin: VBS
 
